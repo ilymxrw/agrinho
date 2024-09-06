@@ -19,13 +19,15 @@ body {
     padding: 0;
 }
 
-.principal {
-    background-image: url("img/homem.jpeg");
-    background-repeat: no-repeat;
-    background-size: contain;
+.principal{
     align-items: right;
     text-align: right;
-    width: 40%;
+    display: flex;
+    width: 80%;
+    margin: 5em;
+}
+imagem{
+    max-width: 700px;
 }
 
 .container {
@@ -50,8 +52,11 @@ body {
 }
 
 .container__aviso {
-    font-size: 12px;
+    font-size: 20px;
     color: var(--cinza-secundario);
+    display: inline;
+    align-items: right;
+    margin-right: 60em;
 }
 
 .container__titulo {
@@ -60,6 +65,8 @@ body {
 }
 
 .container__imagem {
+    align-items: flex-end;
+    display: flex;
     margin: 1em 0 2em 0;
 }
 
@@ -113,8 +120,9 @@ body {
 }
 
 .lista__item {
-    font-size: 32px;
+    font-size: 18px;
     color: var(--branco-principal);
+    margin: 1em;
 }
 
 .rodape {
