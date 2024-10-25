@@ -1,123 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <title>Alura Plus</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
 </head>
 
 <body>
-    <section class="principal container">
-        <div class="container__caixa">
-            <h1 class="container__titulo"></h1>
-            <img class="imagem" src="img/homem.jpeg" alt="" class="container__imagem"> 
-            <p class="container__imagem">O que é sensores na agricultura:Os sensores na agricultura também permitem entender com precisão as variações espaciais e temporais. Com softwares e aplicativos utilizados na palma da mão, os sensores obtêm informações em contato direto com o solo — como pH e umidade — ou de maneira remota — como imagens de satélite e sinais infravermelhos</p>
-            <a href="www.alura.com.br" class=""></a>
-            <a href="www.alura.com.br" class=""></a>
-         
+    <header class="container text-center">
+        <img src="img/eleonor.jpg" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Mariana_</p>
+        <h1>Eu aprendo Programação</h1>
+        <p>Sou Aluna do Segundo ano do Ensino Médio e estudo no Colégio Padre Anchieta. Aprendo sobre pensamento computacional usando HTML, Alura, CSS e JavaScript. Veja os projetos
+            que já desenvolvi!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">Alura</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
         </div>
-    </section>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/agrinho.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Agrinho:</h5>
+                        <p class="card-text">Este projeto é uma página web que apresenta informações sobre o projeto agrinho, incluindo informações de como desenvolvi.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/yellowpong.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Yellowpong:</h5>
+                        <p class="card-text">Este projeto é um jogo interativo com seres humanos e softwares, onde o objetivo é pontuar a maior quantidade de pontos</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
 
-    <section class="container secundario">
-        <img src="img/sensor-de-chuva.png"alt="Um monitor e um celular com a alura plus aberta" class="secundario__imagem">
-        <div class="container__descricao">
-            <h2 class="descricao__titulo">Sensores na agricultura: saiba por que utilizá-los</h2>
-            <p class="descricao__texto">O uso de tecnologia no campo tem auxiliado significativamente os produtores na otimização de insumos e no aumento da produtividade e da eficiência. Entre as ferramentas disponíveis, os sensores na agricultura têm se destacado, considerando suas aplicações.
-
-                A tecnologia, afinal, permite monitorar diversos dados sem a necessidade do contato físico com a cultura e o ambiente. A coleta de informações, por sua vez, facilita a tomada de decisões e contribui para a gestão no campo.
-                
-                </p>
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/flashcard.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Flashcard:
+                        </h5>
+                        <p class="card-text">Este projeto cria uma experiência interativa educativa sobre
+                            matérias escolares, permitindo aos usuários explorar informações sobre conhecimentos gerais, geografia, entre outros.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </main>
 
-    <section class="container secundario">
-        <div class="container__descricao">
-            <p class="descricao__texto">
-
-                <h2 class="dispositivos__titulo">O que são sensores na agricultura?</h2>
-                    Os sensores agrícolas são tecnologias que permitem obter informações sobre a cultura e o ambiente de cultivo, sem que haja a presença física do produtor.
-
-                    Esses dispositivos simplificam a coleta de dados e o monitoramento de funções específicas, como balanço hídrico, presença de ervas daninhas e insetos na plantação, fluxo de grãos, índices de vegetação e assim por diante. O sensoriamento também pode ser aplicado para verificar a qualidade do solo e as condições climáticas.
-                    
-                    
-            </p>
-            
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto é uma página web criada com HTML e CSS, destinada a concorrer a uma premiação.
+                        O objetivo é criar um site sobre sensores na agricultura e explicaçõs do porque utilizar, para que serve e quais tecnologias utilizadas.
+                        O uso de tecnologia no campo tem auxiliado significativamente os produtores na otimização de insumos e no aumento da produtividade e da eficiência. Entre as ferramentas disponíveis, os sensores na agricultura têm se destacado, considerando suas aplicações. A tecnologia, afinal, permite monitorar diversos dados sem a necessidade do contato físico com a cultura e o ambiente. A coleta de informações, por sua vez, facilita a tomada de decisões e contribui para a gestão no campo. 
+                       </p>
+                    <img src="img/agrinho.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="file:///home/escola/V%C3%ADdeos/agrinho-main/index.html">Ver projeto ao vivo</a>
+                    <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+                </div>
+            </div>
         </div>
-        <img src="img/plantação.jpeg" alt="Tela do alura+ e alura língua" class="secundario__imagem">
-    </section>
-
-    <section class="container secundario">
-        <img src="img/grama.jpeg" alt="Notebook com a página do curso HTML5 e CSS3 da Alura aberta"
-            class="secundario__imagem">
-        <div class="container__descricao">
-            <h2 class="descricao__titulo">Por que utilizar sensores na agricultura de precisão?</h2>
-            <p class="descricao__texto">o sensoriamento remoto traz grandes benefícios para o cultivo, a partir da obtenção de dados detalhados sobre a topografia, as condições do solo, os agentes patógenos e assim por diante.
-
-                Afinal, a coleta de informações permite planejar melhor o cultivo, prever a produção agrícola e aplicar os recursos necessários para aumentar a produtividade — o que é fundamental para uma boa gestão no campo.
-                
-                A aplicação de diversos tipos de sensores, a integração de dados e a disponibilização das informações em todos os dispositivos eletrônicos garante a atualização em tempo real das necessidades da produção. Não é por acaso que pequenos produtores também têm adotado tecnologias acessíveis para usar os recursos com maior eficiência.</p>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto consiste em uma aplicação web interativa, desenvolvida com Scratch, que
+                        simula um jogo de ping-pong, uma experiência divertida e de aprendizado.O objetivo é
+                        acumular a maior quantidade de pontos que conseguir para ganhar do servidor, e de uma forma interativa desenvolver concentração.
+                    </p>
+                   
+                    <img src="img/yellowpong.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/tecnicas-computacionais-refletindo-sobre-ia/">Ver projeto ao
+                        vivo</a>
+                    <a href="https://github.com/femascheti/tecnicas-computacionais-refletindo-sobre-ia">Ver código do
+                        projeto</a>
+                </div>
+            </div>
         </div>
-    </section>
-    
-    <section class="dispositivos">
-        <h2 class="dispositivos__titulo">Quais são as tecnologias utilizadas na agricultura?</h2>
-        <ul class="dispositivos__lista">
-            <li>
-                <img src=" alt="">
-                <h3 class="lista__item">Pluviômetro:
-                    Esse é um excelente sensor para controlar o nível de irrigação na agricultura, uma vez que permite coletar a água das precipitações por um período e verificar o volume de chuva.
-                     Desse modo, é possível ter informações precisas sobre a irrigação e, inclusive,
-                      utilizar os dados para planejar as próximas plantações.</h3>
-            </li>
-            <li>
-                <img src="" alt="">
-                <h3 class="lista__item">Piranômetro
-                    Dentre os vários fatores que interferem no crescimento das plantas, a radiação solar é um dos principais,
-                     visto que é a fonte principal de energia para a fotossíntese. O piranômetro, nesse sentido,
-                      é o sensor adequado para medir a radiação direta e difusa na produção agrícola.</h3>
-            </li>
-            <li>
-                <img src="" alt="">
-                <h3 class="lista__item">Sensores por infravermelho
-                    Essa tecnologia pode ser aplicada em diversos sensores para o melhor monitoramento do cultivo.
-                     Como exemplo, cabe mencionar a identificação de plantas doentes, 
-                     uma vez que a interação das sadias com a radiação eletromagnética é diferente — é o que se conhece por “assinatura espectral”.</h3>
-            </li>
-        </ul>
-    </section>
+    </div>
 
-    <footer class="rodape"> 
-        <img src="img/Logo.png" alt="Alura+" class="rodape__logo">
-        <ul class="rodape__lista">
-            <li class="lista__link">
-                <a href="#">Idioma</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Dispositivos compatíveis</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Contrato de assinatura</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Politica de privacidade</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Proteção de dados no Brasil</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Anuncios personalizados</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Ajuda</a>
-            </li>
-        </ul>
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto é uma aplicação educativa interativa focada em ensinar conceitos básicos de
+                        astronomia. Flashcards são pequenos cartões que servem para testar sua memória. Explicando de forma simples: de um lado, eles têm perguntas, e do outro, as respostas. É possível variar também, com tópicos e palavras-chave ou termos e definições. 
 
+                    </p>
+                    <img src="img/flashcard.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://scratch.mit.edu/projects/951732825/">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Mariana</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
